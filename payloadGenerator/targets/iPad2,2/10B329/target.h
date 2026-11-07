@@ -77,7 +77,7 @@ static inline void install_payload(uint8_t* buf, uint8_t* header, uint8_t* catal
     printf("Done\n");
 
     /* Copy in our exploit payload at the correct offset. */
-    printf("Installing payload... ");
+    printf("Installing stage1 payload... ");
     memcpy(extents_file + SAFE_EXTENTS_OFFSET, payload, sizeof(payload));
     printf("Done\n");
 

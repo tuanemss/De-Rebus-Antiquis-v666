@@ -1,6 +1,6 @@
 #include <stdint.h>
 
-#define BASE_ADDRESS 0x0
+#define BASE_ADDRESS 0x9ff00000
 
 void _start() {
 	*(uint32_t*)(BASE_ADDRESS + 0x43394) = 0x9ff372ae; /* 0x8402a340 -> 0x9ff372ae */
